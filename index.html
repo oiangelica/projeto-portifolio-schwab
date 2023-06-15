@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/menu.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+
+    <title>Matheus Schwab - 3P</title>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <input type="checkbox" id="menu-hamburguer">
+
+            <label for="menu-hamburguer">
+
+            <div class="menu">
+                <span class="hamburguer"></span>
+            </div>
+        </label>
+        <ul>
+            <li><a href="#clientes">Clientes</a> </li>
+            <li><a href="#biografia">Biografia</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#trajetoria">Linha do tempo</a></li>
+            <li><a href="#contatos">Contato</a></li>
+        </ul>
+        </nav>
+       
+            <img src="src/image/logo-header-pequeno-cortado.png" alt="Schwab3P logotipo" class="logo">
+            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        
+    </header>
+    <main class="container">
+
+        <section class="introducao">
+            <div class="imagem-cachorro">
+                <img src="src/image/logo-dog.png" alt="Logomarca com desenho de cachorro">
+            </div>            
+            <div class="descricao">
+                <h1 class="titulo-principal">Soluções plurais, estratégicas e transformadoras</h1>
+                <p class="p-descricao">Somos um Hub Estratégico que une a expertise do mundo corporativo e acadêmico, criando soluções para empresas, agências de publicidade e produtores culturais que desejam fazer a diferença.</p>
+            </div>
+        </section>
+
+        <section class="clientes" id="clientes">
+
+            <div class="experiencias">
+                <p>Com mais de 13 anos de experiência e mais de 100 clientes atendidos, a Schwab 3P se destaca como especialista em soluções estratégicas. Nossa expertise em planejamento, consultoria e pesquisa nos permite atuar com empresas de diversos perfis.</p>
+
+                <h3>Conheça alguns clientes que já passaram por aqui:</h3>
+            </div>
+
+            <div class="carrossel-clientes">                         
+               <button id="seta-voltar" class="seta-voltar seta esconder-setas"><img src="src/image/seta.png" alt="Botão seta para voltar"></button>
+                
+                <div class="imagens-carrossel">
+                    <img src="src/image/marcas-clientes/paypal.png" alt="imagem logo PayPal" class="marca-cliente imagem-atual">
+                    <img src="src/image/marcas-clientes/patagonia.png" alt="imagem logo Patagonia" class="marca-cliente">
+                    <img src="src/image/marcas-clientes/vivo.png" alt="imagem logo Vivo" class="marca-cliente">
+                    <img src="src/image/marcas-clientes/joao-rock.png" alt="imagem logo João Rock" class="marca-cliente">
+                    <img src="src/image/marcas-clientes/vtex.png" alt="imagem logo Vtex" class="marca-cliente">
+                    <img src="src/image/marcas-clientes/ambev.png" alt="imagem logo Ambev" class="marca-cliente">
+                    <img src="src/image/marcas-clientes/volta.png" alt="imagem logo Volta" class="marca-cliente">
+                    <img src="src/image/marcas-clientes/loja-integrada.png" alt="imagem logo Loja Integrada" class="marca-cliente">
+                    <img src="src/image/marcas-clientes/luisa-abram.png" alt="imagem logo Luisa Abram" class="marca-cliente">
+                    <img src="src/image/marcas-clientes/ab020.png" alt="imagem logo Ab020" class="marca-cliente">
+                    <img src="src/image/marcas-clientes/seu-gin.png" alt="imagem logo Seu Gin" class="marca-cliente">
+                    <img src="src/image/marcas-clientes/copema.png" alt="Imagem logo Copema" class="marca-cliente">
+                    <img src="src/image/marcas-clientes/teabraco.png" alt="imagem logo Teabraço" class="marca-cliente">
+                </div>          
+                
+                <button id="seta-avancar" class="seta-avancar seta"><img src="src/image/seta.png" alt="Botão seta para avançar"></button>
+            </div>
+
+        </section>
+
+        <section class="sobre" id="biografia">
+            <img src="src/image/img-about.jpg" alt="Uma foto do Matheus">
+
+            <div class="descricao-carreira">
+                <h2 class="titulo-apresentacao">Oi, eu sou o Matheus!</h2>
+                <p>Durante mais de uma década no mercado publicitário, compreendi o poder transformador do planejamento estratégico. Ser estratégico é a chave para moldar um mundo melhor, direcionando recursos e esforços com eficiência.</p>
+                <p>Além disso, minha trajetória acadêmica revelou a importância do diálogo com diversas áreas do conhecimento, possibilitando a incorporação de metodologias, referências, técnicas e perspectivas inovadoras ao nosso trabalho cotidiano.</p>
+                <p>Hoje, meu objetivo é auxiliar empresas, agências e produtores culturais a fazer a diferença. Descubra como nossa abordagem estratégica e transdisciplinar pode impulsionar o crescimento do seu negócio e junte-se a nós nessa jornada de transformação.</p>
+            </div>
+        </section>
+
+        <section class="areas-atuacao" id="servicos">
+            <div class="planejamento">
+                <img src="src/image/icon-planejamento.png" alt="icone de uma lâmpada desenhada sorrindo ">
+                <div class="descricao">
+                    <h3>Planejamento</h3>
+                    <p>Alavanque sua marca com consultorias e planejamentos estratégicos de marketing, marketing digital, comunicação e redes sociais.</p>
+                </div>
+            </div>
+
+            <div class="projetos-culturais">
+                <img src="src/image/icon-projetos-culturais.png" alt="icone desenhado de representaçao">
+                <div class="descricao">
+                    <h3>Projetos culturais</h3>
+                    <p>Potencialize seu impacto! Torne-se um agente cultural mais estratégico com projetos e planos de comunicação personalizados ou consultorias em captação de recursos via editais.</p>
+                </div>
+            </div>
+
+            <div class="pesquisa">
+                <img src="src/image/icon-pesquisa.png" alt="Icone com uma Lupa desenhada piscando um olho">
+                <div class="descricao">
+                    <h3>Pesquisa</h3>
+                    <p>Transforme dados em estratégias poderosas e obtenha insights valiosos para sua marca com pesquisas qualitativas, desk insights, focus groups e pesquisas etnográficas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="trajetoria" id="trajetoria">
+            <img src="src/image/img-trajetoria.png" alt="Uma foto do Matheus">
+
+            <div class="carrossel-trajetoria">
+                
+                <div class="informacoes">
+                    <h4>Minha trajetória</h4>
+
+                        <ul class="anos">
+                            <li class="ano"><button id="botao-2023" class="botao-ano selecionado">2023</button></li>
+                            <li class="ano"><button id="botao-2022" class="botao-ano">2022</button></li>
+                            <li class="ano"><button id="botao-2021" class="botao-ano">2021</button></li>
+                            <li class="ano"><button id="botao-2015" class="botao-ano">2015</button></li>
+                            <li class="ano"><button id="botao-2014" class="botao-ano">2014</button></li>
+                        </ul>
+
+                        <div class="trajetoria-texto ativa">
+                            <h5 class="titulo">Mestrado</h5>
+                            <p>Aprovação da dissertação “Cultura Caipira e Mídias Digitais: Um estudo nas festas de São Luiz do Paraitinga” no Programa de Pós-Graduação Comunicação & Cultura da Universidade de Sorocaba.</p>
+                        </div>
+
+                        <div class="trajetoria-texto ">
+                            <h5 class="titulo">Schwab 3P</h5>
+                            <P>Fundação da Schwab 3P. Novo momento da carreira, em formato freelancer. Dedicação full time ao Planejamento Estratégico.</P>
+                        </div>
+
+                        <div class="trajetoria-texto">
+                            <h5 class="titulo">Pós-graduação</h5>
+                            <p>Aprovação da monografia “A linguagem digital na transmissão das tradições do carnaval de marchinhas de São Luiz do Paraitinga” no Programa de Pós-Graduação Cultura Material & Consumo: Perspectivas semiopsicanalíticas da ECA-USP</p>
+                        </div>
+
+                        <div class="trajetoria-texto ">
+                            <h5 class="titulo">Hash</h5>
+                            <p>Fundação da HASH Publicidade Ltda. Por 7 anos fui sócio e trabalhei em dezenas de projetos corporativos realizando diversas funções no marketing digital.</p>
+                        </div>
+
+                         <div class="trajetoria-texto"> 
+                            <h5 class="titulo">Havas group</h5>
+                            <P>O início da trajetória profissional na maior agência de marketing digital do Brasil na época: Media Contacts do grupo HAVAS. Por 4 anos liderei equipes e projetos para grandes marcas do país.</P>
+                        </div>
+                        
+                        <ul class="botoes-carrossel">                            
+                            <li><button class="botao "></button></li>
+                            <li><button class="botao "></button></li>
+                            <li><button class="botao"></button></li>
+                            <li><button class="botao"></button></li>
+                            <li><button class="botao"></button></li>
+                        </ul>
+                </div>    
+            </div>
+        </section>
+        <section class="contatos" id="contatos">
+            
+            <div class="contato-whatsapp">
+                <h3>Bora bater um papo?</h3>
+                <button class="botao-whatsapp" type="button"><a href="https://wa.me/5511996259500" target="_blank" class="link-whatsapp"><img src="src/image/whatsapp-icon-p.png" alt="ícone whatsApp" width="25px"> Chamar no WhatsApp</a></button>
+            </div>
+
+            <div class="redes-sociais">
+                <h5>Ou se preferir:</h5>                
+                <nav>
+                    <a href="mailto:schwab3p@gmail.com" target="_blank" class="gmail"><i class="far fa-envelope icon"></i> schwab3p@gmail.com</a>
+                    <a href="#" target="_blank" class="instagram"><i class="fab fa-instagram icon"></i>  @schwab3p</a>
+                    <a href="#" target="_blank" class="linkedin"><i class="fab fa-linkedin-in icon"></i>  Linkedin</a>
+                </nav>
+            </div>
+        </section>
+    </main>
+    <footer class="roda-pe">
+        <div class="creditos">
+            <p class="copyright">Copyright 2022 Schwab3P. All rights reserved</p>
+            <p>Coded by <a href="https://github.com/oiangelica" target="_blank"><i class="fab fa-github"></i> Angélica Coelho</a></p>
+        </div>
+
+        <img src="src/image/logo-header-pequeno-cortado.png" alt="logo">
+    </footer>
+
+    <script type="text/javascript" src="src/js/index.js"></script>
+</body>
+</html>
