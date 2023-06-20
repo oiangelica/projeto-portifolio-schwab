@@ -18,7 +18,7 @@ setaVoltar.addEventListener("click", ()=>{
         setaVoltar.classList.remove("esconder-setas");
         moverImagensClientes();
     }
-    imagemAtual = imagemAtual - 2;
+    imagemAtual = imagemAtual - 1;
 });
 
 setaAvancar.addEventListener("click", ()=> {        
@@ -29,7 +29,7 @@ setaAvancar.addEventListener("click", ()=> {
         setaAvancar.classList.remove("esconder-setas");        
         moverImagensClientes();
     }
-    imagemAtual = imagemAtual + 2;
+    imagemAtual = imagemAtual + 1;
 });
 
 function moverImagensClientes(){

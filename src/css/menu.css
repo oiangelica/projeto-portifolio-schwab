@@ -75,8 +75,8 @@
 }
 .header nav ul {
     width: 200px;
-    /* background-color: #fff; REMOVER BACKGROUND  */
     padding: 20px;
+    border-radius: 10px;    
 }
 
 .header nav ul a {
@@ -85,13 +85,12 @@
     display: block;
     cursor: pointer;
     margin: 5px 0;
-    font-size: 1.1rem;
+    font-size: 1.6rem;
     transition: 0.3s ease-in-out;
 }
 .header nav ul a:hover{
     background-color:#BCAAEF;
     border-radius: 50px;
-    opacity: 0.7;
-    
+    opacity: 0.8;    
 }
 

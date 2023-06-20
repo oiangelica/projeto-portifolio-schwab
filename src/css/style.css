@@ -1,6 +1,10 @@
+html {
+    font-size: 62.5%;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 62.5%;
+
     max-width: 1440px;
     margin: 0 auto;
     color: #232323;
@@ -9,13 +13,13 @@ body {
 
 .header {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     margin: 1% 3%;
 }
 
 .header .fa-linkedin-in {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     color: #0066C8;
     transition: 0.5s ease-in-out;
 }
@@ -28,6 +32,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
+    padding: 2%;
 }
 
 .container .introducao {
@@ -38,24 +43,26 @@ body {
 }
 
 .introducao .imagem-cachorro {
-    margin-left: 8%;
+    margin: 0 3% 0 8%;
 }
 
 .descricao .titulo-principal {
-    font-size: 38px;
+    font-size: 3.8rem;
     width: 400px;
     padding-bottom: 2%;
 }
 
 .introducao .descricao {
-    font-size: 20px;
+    font-size: 2rem;
     max-width: 600px;
 }
 
 .clientes {
     background-color: #232323;
     color: #F8F7F0;
-    font-size: 17px;
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .clientes .experiencias {
@@ -71,10 +78,11 @@ body {
     position: relative;
     display: flex;
     align-items: center;
+    flex-shrink: 1;
 }
 
 .carrossel-clientes button img {
-    max-height: 70px;
+    max-height: 35px;
 }
 
 .seta-voltar,
@@ -103,7 +111,7 @@ body {
 }
 
 .imagens-carrossel {
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
     padding: 0 10px;
     position: relative;
@@ -120,7 +128,7 @@ body {
     display: none;
 }
 
-.clientes .carrossel-clientes .marca-cliente {
+.carrossel-clientes .marca-cliente {
     max-width: 140px;
     max-height: 90px;
     gap: 10px;
@@ -133,46 +141,33 @@ body {
 }
 
 .sobre img {
-    height: 90vh;
-    width: 50vw;
+    height: auto;
+    width: 50%;
 }
 
 .sobre .descricao-carreira {
     width: 50%;
-    padding: 5%;
-    font-size: 20px;
+    padding: 0 2% 0 5%;
+    font-size: 2rem;
 }
 
 .descricao-carreira .titulo-apresentacao {
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
 .descricao-carreira p {
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
 .areas-atuacao {
     display: grid;
-    grid-template-columns: repeat(3, 33.3%);
-    grid-template-rows: 80vh;
+    grid: "planejamento projetos-culturais pesquisa" 40vh "planejamento projetos-culturais pesquisa" 40vh /33.3% 33.3% 33.3%;
     color: #F8F7F0;
+    align-items: start;
 }
 
 .areas-atuacao .descricao {
     width: 65%;
-}
-
-.areas-atuacao h3 {
-    font-size: 30px;
-}
-
-.areas-atuacao p {
-    font-size: 17px;
-}
-
-.areas-atuacao .planejamento,
-.projetos-culturais,
-.pesquisa {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -180,16 +175,73 @@ body {
     text-align: center;
 }
 
-.areas-atuacao .planejamento {
+.areas-atuacao h3 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+.areas-atuacao p {
+    font-size: 1.7rem;
+}
+
+.planejamento,
+.projetos-culturais,
+.pesquisa {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: center;
+}
+
+.planejamento {
     background-color: #FD913A;
+    grid-area: planejamento;
+    display: grid;
+    grid: "icon-planejamento" 40vh "descricao-planejamento" 40vh;
+    justify-items: center;
 }
 
-.areas-atuacao .projetos-culturais {
+.icon-planejamento {
+    grid-area: icon-planejamento;
+    margin: auto;
+}
+
+.descricao-planejamento {
+    grid-area: descricao-planejamento;
+}
+
+.projetos-culturais {
     background-color: #CF86B8;
+    display: grid;
+    grid: "icon-projetos-culturais" 40vh "descricao-projetos-culturais" 40vh;
+    justify-items: center;
+    grid-area: projetos-culturais;
 }
 
-.areas-atuacao .pesquisa {
+.icon-projetos-culturais {
+    margin: auto;
+    grid-area: icon-projetos-culturais;
+}
+
+.descricao-projetos-culturais {
+    grid-area: descricao-projetos-culturais;
+}
+
+.pesquisa {
     background-color: #7EAD42;
+    display: grid;
+    grid: "icon-pesquisa" 40vh "descricao-pesquisa" 40vh;
+    justify-items: center;
+    grid-area: pesquisa;
+}
+
+.icon-pesquisa {
+    margin: auto;
+    grid-area: icon-pesquisa;
+}
+
+.descricao-pesquisa {
+    grid-area: descricao-pesquisa;
 }
 
 .trajetoria {
@@ -237,16 +289,11 @@ body {
     margin: 5%;
 }
 
-.anos .ano:first-child {
-    margin-left: 0;
-}
-
 .anos .botao-ano {
     color: #BCAAEF;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.8rem;
     opacity: 0.4;
-
 }
 
 .botao-ano:hover {
@@ -255,12 +302,12 @@ body {
 }
 
 .carrossel-trajetoria .titulo {
-    font-size: 18px;
+    font-size: 1.8rem;
     padding: 4% 0;
 }
 
 .carrossel-trajetoria p {
-    font-size: 16px;
+    font-size: 1.6rem;
     padding-bottom: 5%;
 }
 
@@ -297,18 +344,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 5% auto;
 }
 
 .contatos h3 {
     font-weight: 800;
     color: #000000;
-    font-size: 30px;
+    font-size: 3.0rem;
     text-align: center;
     padding: 5% 0 2%;
 }
 
 .contatos .botao-whatsapp {
-    font-size: 18px;
+    font-size: 1.8rem;
     border: 1px solid #232323;
     border-radius: 15px;
     padding: 12px 50px;
@@ -339,8 +387,8 @@ body {
 
 .redes-sociais h5 {
     font-weight: 700;
-    font-size: 20px;
-    margin: 7% 0 3%;
+    font-size: 2rem;
+    margin: 3%;
 }
 
 .redes-sociais nav {
@@ -353,13 +401,15 @@ body {
 
 .redes-sociais nav a {
     color: #232323;
-    font-size: 18px;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
 }
 
 .redes-sociais nav .icon {
     color: #b39bf5;
-    font-size: 25px;
-    padding-right: 3%;
+    font-size: 1.8rem;
+    margin-right: 3%;
 }
 
 footer {
@@ -378,7 +428,7 @@ footer .creditos {
 
 footer p {
     padding: 2px 0;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 

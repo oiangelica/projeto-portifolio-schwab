@@ -1,0 +1,83 @@
+@media(max-width:440px){
+    .header nav ul {
+        background-color: #fff;
+        opacity: 0.94;
+    }
+    .header nav{
+        position: static;
+    }
+    .descricao .titulo-principal {
+        font-size: 3rem;
+    }
+    .imagens-carrossel{
+        width: 70%;
+    }
+}
+@media(max-width:1023px){
+    .logo{
+        min-width: 100px;
+        padding: 0 5%;
+    }
+    .container .introducao{
+        flex-direction: column;
+        justify-content: center;
+        height: auto;  
+        margin: 10% auto;      
+    } 
+    .imagem-cachorro{
+        margin: auto;
+    }
+    .imagem-cachorro img{
+        padding: 2%;        
+        width: 80%;
+    }
+    .descricao .titulo-principal{
+        padding-bottom: 5%;
+        width: auto;
+    }
+    .p-descricao{
+        width: 90%;
+    }
+    .sobre{
+        flex-direction: column;
+    }
+    .sobre img {
+        width: 100%;
+    }
+    .sobre .descricao-carreira {
+        padding-top: 5%;
+        width: 99%;
+    }
+    .areas-atuacao{
+        display: flex;
+        flex-direction: column;        
+    }
+    .planejamento, .projetos-culturais, .pesquisa{
+        display: flex;
+        align-items: center;
+        width: auto;
+        padding: 10% 0;
+    }
+    .areas-atuacao p{
+        width: 90%;
+    }
+    .carrossel-trajetoria{
+        padding: 5% 2%;
+    }
+    .trajetoria{
+        display: flex;
+        flex-direction: column;
+    }
+    .redes-sociais nav{
+        flex-direction: column;        
+    }
+    .redes-sociais nav a{
+        padding: 2% 0;
+    }
+}
+
+@media(max-width:1024px){
+    .anos .ano {
+        margin: 5% 3%;
+    }
+}
