@@ -7,7 +7,7 @@ const botaoBaixo = document.querySelectorAll(".botao");
 const textoTrajetoria = document.getElementsByClassName('trajetoria-texto');
 let imagemAtual = 0;
 let indiceTextoAtivo = 0;
-
+console.log(imagensMarcas);
 //  Carrossel de marcas clientes
 setaVoltar.addEventListener("click", ()=>{       
     if (imagemAtual <= 0) {
@@ -19,10 +19,11 @@ setaVoltar.addEventListener("click", ()=>{
         moverImagensClientes();
     }
     imagemAtual = imagemAtual - 1;
+    console.log(imagemAtual);
 });
 
 setaAvancar.addEventListener("click", ()=> {        
-    if(imagemAtual >= maxImagens -1) {         
+    if(imagemAtual >= maxImagens - 1) {         
         setaAvancar.classList.add("esconder-setas");
         return
     }else{
@@ -30,6 +31,7 @@ setaAvancar.addEventListener("click", ()=> {
         moverImagensClientes();
     }
     imagemAtual = imagemAtual + 1;
+    console.log(imagemAtual);
 });
 
 function moverImagensClientes(){

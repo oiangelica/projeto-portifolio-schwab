@@ -12,6 +12,9 @@
     .imagens-carrossel{
         width: 70%;
     }
+    .trajetoria .carrossel-trajetoria{
+        padding: 10% 2%;
+    }
 }
 @media(max-width:1023px){
     .logo{
