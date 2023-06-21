@@ -64,7 +64,7 @@
 }
 
 .header nav {
-    position: relative;    
+    /* position: relative;     */
     top: 8px;
     right: 20px;
     z-index: 1;
