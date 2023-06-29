@@ -7,7 +7,6 @@ const botaoBaixo = document.querySelectorAll(".botao");
 const textoTrajetoria = document.getElementsByClassName('trajetoria-texto');
 let imagemAtual = 0;
 let indiceTextoAtivo = 0;
-console.log(imagensMarcas);
 //  Carrossel de marcas clientes
 setaVoltar.addEventListener("click", ()=>{       
     if (imagemAtual <= 0) {
@@ -19,7 +18,6 @@ setaVoltar.addEventListener("click", ()=>{
         moverImagensClientes();
     }
     imagemAtual = imagemAtual - 1;
-    console.log(imagemAtual);
 });
 
 setaAvancar.addEventListener("click", ()=> {        
@@ -31,7 +29,6 @@ setaAvancar.addEventListener("click", ()=> {
         moverImagensClientes();
     }
     imagemAtual = imagemAtual + 1;
-    console.log(imagemAtual);
 });
 
 function moverImagensClientes(){
@@ -44,15 +41,17 @@ function moverImagensClientes(){
 }
 
 //          ----> CARROSSEL TRAGETÓRIA <-----
+
 botaoAno.forEach((botao, indice) => {
-    botao.addEventListener('click', () => {         
-        PercorrerOsAnos(indice);
+    botao.addEventListener('click', () => {  
+        percorrerOsAnos(indice);
     });
 });
 
 botaoBaixo.forEach((botao, indice) => {
-    botao.addEventListener('click', () => {    
-        PercorrerOsAnos(indice);
+    botao.addEventListener('click', () => { 
+        percorrerOsAnos(indice);       
+        desativarBotaoSelecionado();
     });
 });
 
@@ -74,11 +73,11 @@ function esconderTextoTragetória (){
 }
 
 function desativarBotaoSelecionado() {
-    const botaoSelecionado = document.querySelector('.selecionado');
+    let botaoSelecionado = document.querySelector('.selecionado');
     botaoSelecionado.classList.remove('selecionado');
  }
 
- function PercorrerOsAnos(novoIndice) {  
+ function percorrerOsAnos(novoIndice) {  
     desativarBotaoSelecionado();  
     selecionarBotaoAno(botaoAno[novoIndice]);
     selecionarBotaoBaixo(botaoBaixo[novoIndice]);

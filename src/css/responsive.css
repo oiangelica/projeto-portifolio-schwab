@@ -6,17 +6,40 @@
     .header nav{
         position: static;
     }
+    .introducao .imagem-cachorro{
+        margin: 0 1rem;
+    }
+    .introducao .imagem-cachorro img {
+        width: 90vw;
+    }
+    .introducao .descricao{
+        margin: 0 2.5rem;
+    }
     .descricao .titulo-principal {
         font-size: 3rem;
+    }
+    .clientes .experiencias{
+        padding: 0 1rem;
+    }
+    .carrossel-clientes{
+        padding: 0 2rem;
+    }
+    .carrossel-clientes .seta-avancar {
+        padding-right: 2rem;
     }
     .imagens-carrossel{
         width: 70%;
     }
+    .areas-atuacao .descricao {
+        width: 90%;
+    }
     .trajetoria .carrossel-trajetoria{
         padding: 10% 2%;
     }
+    
 }
-@media(max-width:1023px){
+
+@media(max-width:1024px){
     .logo{
         min-width: 100px;
         padding: 0 5%;
@@ -25,14 +48,14 @@
         flex-direction: column;
         justify-content: center;
         height: auto;  
-        margin: 10% auto;      
+        margin: 10% 0;      
     } 
-    .imagem-cachorro{
+    .introducao .imagem-cachorro{
         margin: auto;
     }
     .imagem-cachorro img{
         padding: 2%;        
-        width: 80%;
+        width: 90%;
     }
     .descricao .titulo-principal{
         padding-bottom: 5%;
@@ -67,20 +90,20 @@
     .carrossel-trajetoria{
         padding: 5% 2%;
     }
+    .carrossel-trajetoria .anos {
+        justify-content: space-around;
+    }
     .trajetoria{
         display: flex;
         flex-direction: column;
+    }
+    .anos .ano {
+        margin: 5% 3%;
     }
     .redes-sociais nav{
         flex-direction: column;        
     }
     .redes-sociais nav a{
-        padding: 2% 0;
-    }
-}
-
-@media(max-width:1024px){
-    .anos .ano {
-        margin: 5% 3%;
+        padding: 1.2rem 0;
     }
 }
