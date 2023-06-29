@@ -344,7 +344,7 @@ body {
     opacity: 1;
 }
 
-.carrossel-trajetoria .botoes-carrossel .selecionado {
+.carrossel-trajetoria .botoes-carrossel .ativo {
     color: #BCAAEF;
     opacity: 1;
 }

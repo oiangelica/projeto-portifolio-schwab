@@ -43,45 +43,42 @@ function moverImagensClientes(){
 //          ----> CARROSSEL TRAGETÓRIA <-----
 
 botaoAno.forEach((botao, indice) => {
-    botao.addEventListener('click', () => {  
-        percorrerOsAnos(indice);
+    botao.addEventListener('click', () => {
+        console.log(indice);
+        const botaoSelecionado = document.querySelector('.selecionado');
+        botaoSelecionado.classList.remove('selecionado');
+        
+        const itemAtivo = document.querySelector('.ativo');
+        itemAtivo.classList.remove('ativo');
+
+        const trajetoriaAtiva = document.querySelector('.ativa');
+        trajetoriaAtiva.classList.remove('ativa');
+
+        botaoBaixo[indice].classList.toggle('ativo');
+        botao.classList.toggle('selecionado')
+        textoTrajetoria[indice].classList.toggle('ativa');
+
     });
+
 });
 
 botaoBaixo.forEach((botao, indice) => {
-    botao.addEventListener('click', () => { 
-        percorrerOsAnos(indice);       
-        desativarBotaoSelecionado();
+    botao.addEventListener('click', () => {
+        console.log(indice);
+        const botaoSelecionado = document.querySelector('.ativo')
+        botaoSelecionado.classList.remove('ativo');
+        
+        const itemAtivo = document.querySelector('.selecionado');
+        itemAtivo.classList.remove('selecionado');
+
+        const trajetoriaAtiva = document.querySelector('.ativa');
+        trajetoriaAtiva.classList.remove('ativa');
+
+        botaoAno[indice].classList.toggle('selecionado');
+        botao.classList.toggle('ativo')
+
+        textoTrajetoria[indice].classList.toggle('ativa');
+
     });
+
 });
-
-function mostrarTextoTragetória(indice) {
-    textoTrajetoria[indice].classList.add('ativa');
- }
-
-function selecionarBotaoAno (botao) {
-    botao.classList.add('selecionado');
-}
-
-function selecionarBotaoBaixo(botao) {
-    botao.classList.add('selecionado');
-}
-
-function esconderTextoTragetória (){
-    const textoAtivo = document.querySelector('.ativa')
-    textoAtivo.classList.remove('ativa');
-}
-
-function desativarBotaoSelecionado() {
-    let botaoSelecionado = document.querySelector('.selecionado');
-    botaoSelecionado.classList.remove('selecionado');
- }
-
- function percorrerOsAnos(novoIndice) {  
-    desativarBotaoSelecionado();  
-    selecionarBotaoAno(botaoAno[novoIndice]);
-    selecionarBotaoBaixo(botaoBaixo[novoIndice]);
-    esconderTextoTragetória();
-    mostrarTextoTragetória(novoIndice);
-    indiceTextoAtivo = novoIndice;
- }
