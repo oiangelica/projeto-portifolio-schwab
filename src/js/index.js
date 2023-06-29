@@ -2,12 +2,19 @@ const setaAvancar = document.getElementById("seta-avancar");
 const setaVoltar = document.getElementById("seta-voltar");
 const imagensMarcas = document.querySelectorAll(".marca-cliente");
 const maxImagens = imagensMarcas.length;
+
 const botaoAno = document.querySelectorAll(".botao-ano");
 const botaoBaixo = document.querySelectorAll(".botao");
 const textoTrajetoria = document.getElementsByClassName('trajetoria-texto');
 let imagemAtual = 0;
 let indiceTextoAtivo = 0;
-//  Carrossel de marcas clientes
+
+const carrosselClientes = document.querySelector('.imagens-carrossel');
+var isMouseDown = false;
+var startX;
+var scrollLeft;
+
+// ----> Carrossel de marcas clientes <-----
 setaVoltar.addEventListener("click", ()=>{       
     if (imagemAtual <= 0) {
         setaVoltar.classList.add("esconder-setas");
@@ -40,8 +47,31 @@ function moverImagensClientes(){
     }); 
 }
 
-//          ----> CARROSSEL TRAGETÓRIA <-----
+//  ----> scrollar arrastando o mouse <-----
+carrosselClientes.addEventListener('mousedown', function (e) {
+    isMouseDown = true;
+    startX = e.pageX - carrosselClientes.offsetLeft;
+    scrollLeft = carrosselClientes.scrollLeft;
+  });
+  
+  carrosselClientes.addEventListener('mouseleave', function () {
+    isMouseDown = false;
+  });
+  
+  carrosselClientes.addEventListener('mouseup', function () {
+    isMouseDown = false;
+  });
+  
+  carrosselClientes.addEventListener('mousemove', function (e) {
+    if (!isMouseDown) return;
+    e.preventDefault();
+    var x = e.pageX - carrosselClientes.offsetLeft;
+    var walk = (x - startX) * 1;
+  
+    carrosselClientes.scrollLeft = scrollLeft - walk;
+  });
 
+//          ----> CARROSSEL TRAGETÓRIA <-----
 botaoAno.forEach((botao, indice) => {
     botao.addEventListener('click', () => {
         console.log(indice);
