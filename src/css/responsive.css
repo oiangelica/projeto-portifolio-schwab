@@ -3,6 +3,9 @@
         min-width: 100px;
         padding: 0 5%;
     }
+    .header .fa-linkedin-in{
+        margin-right: 1rem;
+    }
     .container .introducao{
         flex-direction: column;
         justify-content: center;
