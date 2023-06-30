@@ -15,16 +15,19 @@ var startX;
 var scrollLeft;
 
 // ----> Carrossel de marcas clientes <-----
+console.log(imagensMarcas);
 setaVoltar.addEventListener("click", ()=>{       
     if (imagemAtual <= 0) {
         setaVoltar.classList.add("esconder-setas");
-        return        
+        return            
     }        
     else {
         setaVoltar.classList.remove("esconder-setas");
         moverImagensClientes();
     }
+    console.log(`seta voltar ${imagemAtual}`);
     imagemAtual = imagemAtual - 1;
+    console.log(`seta voltar ${imagemAtual}`);
 });
 
 setaAvancar.addEventListener("click", ()=> {        
@@ -32,14 +35,17 @@ setaAvancar.addEventListener("click", ()=> {
         setaAvancar.classList.add("esconder-setas");
         return
     }else{
+        
         setaAvancar.classList.remove("esconder-setas");        
         moverImagensClientes();
     }
     imagemAtual = imagemAtual + 1;
+    console.log(`seta avancar ${imagemAtual}`)
 });
 
 function moverImagensClientes(){
-    imagensMarcas.forEach((imagem) => imagem.classList.remove("imagem-atual"));
+    imagensMarcas.forEach((imagem) =>imagem.classList.remove("imagem-atual"));
+    imagensMarcas[imagemAtual].classList.toggle("imagem-atual");     
     imagensMarcas[imagemAtual].scrollIntoView({
         inline: "center",
         behavior: "smooth",
@@ -74,7 +80,6 @@ carrosselClientes.addEventListener('mousedown', function (e) {
 //          ----> CARROSSEL TRAGETÓRIA <-----
 botaoAno.forEach((botao, indice) => {
     botao.addEventListener('click', () => {
-        console.log(indice);
         const botaoSelecionado = document.querySelector('.selecionado');
         botaoSelecionado.classList.remove('selecionado');
         
@@ -94,7 +99,6 @@ botaoAno.forEach((botao, indice) => {
 
 botaoBaixo.forEach((botao, indice) => {
     botao.addEventListener('click', () => {
-        console.log(indice);
         const botaoSelecionado = document.querySelector('.ativo')
         botaoSelecionado.classList.remove('ativo');
         
