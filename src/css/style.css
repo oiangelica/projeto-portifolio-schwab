@@ -108,6 +108,7 @@ body {
 .carrossel-clientes .esconder-setas {
     opacity: 0.6;
     cursor: default;
+    pointer-events: none;
 }
 
 .imagens-carrossel {

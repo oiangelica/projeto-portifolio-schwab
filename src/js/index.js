@@ -15,41 +15,40 @@ var startX;
 var scrollLeft;
 
 // ----> Carrossel de marcas clientes <-----
-console.log(imagensMarcas);
-setaVoltar.addEventListener("click", ()=>{       
-    if (imagemAtual <= 0) {
+setaVoltar.addEventListener("click", ()=>{
+    imagemAtual--;
+    moverImagensClientes(); 
+
+    if (imagemAtual === 0) {
         setaVoltar.classList.add("esconder-setas");
-        return            
-    }        
-    else {
+        return;            
+    }
+    if (imagemAtual < maxImagens){
+        setaAvancar.classList.remove("esconder-setas");
+    }   
+});
+
+setaAvancar.addEventListener("click", ()=> { 
+    imagemAtual++;   
+    moverImagensClientes();
+    if(imagemAtual >= 0 ){
         setaVoltar.classList.remove("esconder-setas");
-        moverImagensClientes();
     }
-    console.log(`seta voltar ${imagemAtual}`);
-    imagemAtual = imagemAtual - 1;
-    console.log(`seta voltar ${imagemAtual}`);
+    if (imagemAtual + 1 >= maxImagens) {
+        setaAvancar.classList.add("esconder-setas"); 
+    } 
+    
 });
 
-setaAvancar.addEventListener("click", ()=> {        
-    if(imagemAtual >= maxImagens - 1) {         
-        setaAvancar.classList.add("esconder-setas");
-        return
-    }else{
-        
-        setaAvancar.classList.remove("esconder-setas");        
-        moverImagensClientes();
-    }
-    imagemAtual = imagemAtual + 1;
-    console.log(`seta avancar ${imagemAtual}`)
-});
-
-function moverImagensClientes(){
-    imagensMarcas.forEach((imagem) =>imagem.classList.remove("imagem-atual"));
+function moverImagensClientes() {
+    const actualImage = document.querySelector('.imagem-atual');
+    actualImage.classList.remove("imagem-atual");
+   
     imagensMarcas[imagemAtual].classList.toggle("imagem-atual");     
     imagensMarcas[imagemAtual].scrollIntoView({
         inline: "center",
         behavior: "smooth",
-        block: "nearest"
+        block: "nearest"
     }); 
 }
 
