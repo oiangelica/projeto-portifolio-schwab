@@ -138,8 +138,8 @@ body {
 
 .imagens-carrossel .imagem-atual{
     border-bottom: 1px solid #fff;
-    padding-bottom: 1rem;
-    transform: scale(1.1);
+     padding-bottom: 1rem;
+   transform: scale(1.1);
     transition: 0.5s ease-in-out;
 }
 
