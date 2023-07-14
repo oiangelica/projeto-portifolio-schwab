@@ -213,7 +213,9 @@ body {
     margin: auto;
     padding: 3rem 0;
 }
-
+.icon-planejamento img{
+    height: 200px;
+}
 
 .descricao-planejamento {
     grid-area: descricao-planejamento;
