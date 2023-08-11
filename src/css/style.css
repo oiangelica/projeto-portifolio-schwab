@@ -227,7 +227,7 @@ body {
 }
 
 .projetos-culturais {
-    background-color: #CF86B8;
+    background-color:#7EAD42;
     display: grid;
     grid:
     "icon-projetos-culturais" 30vh
@@ -249,7 +249,7 @@ body {
 }
 
 .pesquisa {
-    background-color: #7EAD42;
+    background-color: #CF86B8 ; 
     display: grid;
     grid:"icon-pesquisa" 30vh
     "descricao-pesquisa" 30vh
