@@ -168,7 +168,8 @@ body {
 
 .areas-atuacao {
     display: grid;
-    grid: "planejamento projetos-culturais pesquisa" 40vh "planejamento projetos-culturais pesquisa" 40vh /33.3% 33.3% 33.3%;
+    grid: "planejamento projetos-culturais pesquisa" 40vh
+    "planejamento projetos-culturais pesquisa" 40vh /33.3% 33.3% 33.3%;
     color: #F8F7F0;
     align-items: start;
 }
@@ -180,6 +181,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-top: 4rem;
 }
 
 .areas-atuacao h3 {
@@ -204,14 +206,17 @@ body {
     background-color: #FD913A;
     grid-area: planejamento;
     display: grid;
-    grid: "icon-planejamento" 40vh "descricao-planejamento" 40vh;
+    grid:
+        "icon-planejamento" 30vh
+        "descricao-planejamento" 30vh
+        "div-botao-cases" 20vh;
     justify-items: center;
 }
 
 .icon-planejamento  {
     grid-area: icon-planejamento;
     margin: auto;
-    padding: 3rem 0;
+    padding: 5rem 0;
 }
 .icon-planejamento img{
     height: 200px;
@@ -224,7 +229,10 @@ body {
 .projetos-culturais {
     background-color: #CF86B8;
     display: grid;
-    grid: "icon-projetos-culturais" 40vh "descricao-projetos-culturais" 40vh;
+    grid:
+    "icon-projetos-culturais" 30vh
+    "descricao-projetos-culturais"30vh
+    "div-botao-cases" 20vh;
     justify-items: center;
     grid-area: projetos-culturais;
 }
@@ -232,7 +240,7 @@ body {
 .icon-projetos-culturais {
     grid-area: icon-projetos-culturais;
     margin: auto;
-    padding: 3rem 0;
+    padding: 5rem 0;
 
 }
 
@@ -243,7 +251,9 @@ body {
 .pesquisa {
     background-color: #7EAD42;
     display: grid;
-    grid: "icon-pesquisa" 40vh "descricao-pesquisa" 40vh;
+    grid:"icon-pesquisa" 30vh
+    "descricao-pesquisa" 30vh
+    "div-botao-cases" 20vh;
     justify-items: center;
     grid-area: pesquisa;
 }
@@ -251,11 +261,38 @@ body {
 .icon-pesquisa {
     margin: auto;
     grid-area: icon-pesquisa;
-    padding: 3rem 0;
+    padding: 5rem 0;
 }
 
 .descricao-pesquisa {
     grid-area: descricao-pesquisa;
+}
+
+.div-botao-ver-cases { 
+    grid-area: div-botao-cases;
+    padding: 3rem 0;
+}
+
+.botao-ver-cases {
+    background-color: #F8F7F0;
+    border: 1px solid #a393cf;
+    border-radius: 15px;
+    margin: 1rem;
+    padding: 1rem 2rem;
+    transition: 0.5s ease-in-out;
+    box-shadow: 1px 1px 5px #4c4c4c;
+}
+
+.botao-ver-cases:hover { 
+    cursor: pointer;
+    transform: scale(1.08);
+}
+
+.link-botao-ver-cases{
+    color:#4c3e74;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .trajetoria {
