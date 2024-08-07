@@ -1,3 +1,43 @@
+@media(max-width:440px){
+    .header nav ul {
+        background-color: #fff;
+        opacity: 0.94;
+    }
+    .header nav{
+        position: static;
+    }
+    .introducao .imagem-cachorro{
+        margin: 0 1rem;
+    }
+    .introducao .imagem-cachorro img {
+        width: 90vw;
+    }
+    .introducao .descricao{
+        margin: 0 2.5rem;
+    }
+    .descricao .titulo-principal {
+        font-size: 3rem;
+    }
+    .clientes .experiencias{
+        padding: 0 1rem;
+    }
+    .carrossel-clientes{
+        padding: 0 2rem;
+    }
+    .carrossel-clientes .seta-avancar {
+        padding-right: 2rem;
+    }
+    .imagens-carrossel{
+        width: 70%;
+    }
+    .areas-atuacao .descricao {
+        width: 90%;
+    }
+    .trajetoria .carrossel-trajetoria{
+        padding: 10% 2%;
+    }    
+}
+
 @media(max-height:950px) {
     .areas-atuacao {
         display: grid;
@@ -95,44 +135,4 @@
     .redes-sociais nav a{
         padding: 1.2rem 0;
     }
-}
-
-@media(max-width:440px){
-    .header nav ul {
-        background-color: #fff;
-        opacity: 0.94;
-    }
-    .header nav{
-        position: static;
-    }
-    .introducao .imagem-cachorro{
-        margin: 0 1rem;
-    }
-    .introducao .imagem-cachorro img {
-        width: 90vw;
-    }
-    .introducao .descricao{
-        margin: 0 2.5rem;
-    }
-    .descricao .titulo-principal {
-        font-size: 3rem;
-    }
-    .clientes .experiencias{
-        padding: 0 1rem;
-    }
-    .carrossel-clientes{
-        padding: 0 2rem;
-    }
-    .carrossel-clientes .seta-avancar {
-        padding-right: 2rem;
-    }
-    .imagens-carrossel{
-        width: 70%;
-    }
-    .areas-atuacao .descricao {
-        width: 90%;
-    }
-    .trajetoria .carrossel-trajetoria{
-        padding: 10% 2%;
-    }    
 }
